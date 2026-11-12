@@ -4,13 +4,13 @@ import { TurzxDisplay, loadFramebuffer } from 'turzx-render';
 export function dashboardSvg(width, height) {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">
     <rect width="100%" height="100%" fill="#101827"/>
-    <text x="24" y="60" font-family="sans-serif" font-size="28" fill="white">Mi proyecto</text>
-    <text x="24" y="105" font-family="sans-serif" font-size="18" fill="#93c5fd">Pantalla lista</text>
+    <text x="24" y="60" font-family="sans-serif" font-size="28" fill="white">My dashboard</text>
+    <text x="24" y="105" font-family="sans-serif" font-size="18" fill="#93c5fd">Display ready</text>
   </svg>`);
 }
 
 export function clockSvg(width) {
-  const time = new Date().toLocaleTimeString('es-MX', { hour12: false });
+  const time = new Date().toLocaleTimeString('en-US', { hour12: false });
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="80">
     <rect width="100%" height="100%" fill="#101827"/>
     <text x="24" y="53" font-family="monospace" font-size="38" fill="#34d399">${time}</text>

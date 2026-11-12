@@ -1,7 +1,7 @@
 {
   "name": "turzx-render",
-  "version": "1.0.1",
-  "description": "Library and CLI for the TURZX/Turing/UsbMonitor 3.5 display, driven over USB bulk instead of the serial port",
+  "version": "1.0.2",
+  "description": "Node.js and TypeScript library and CLI for TURZX / Turing Smart Screen 3.5-inch USB displays. Render images, SVG dashboards and RGB565 partial updates on macOS.",
   "type": "module",
   "scripts": {
     "dev": "tsx src/cli.ts",
@@ -41,7 +41,9 @@
     "examples",
     "assets",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "PUBLISHING.md",
+    "tsconfig.json"
   ],
   "author": "Pamsho09",
   "license": "MIT",
@@ -55,10 +57,21 @@
   },
   "keywords": [
     "turzx",
+    "turing-smart-screen",
     "turing",
-    "usb",
+    "usbmonitor",
+    "usb-display",
+    "lcd",
     "display",
+    "dashboard",
     "rgb565",
+    "libusb",
+    "nodejs",
+    "typescript",
     "macos"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
