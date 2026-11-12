@@ -1,0 +1,64 @@
+{
+  "name": "turzx-render",
+  "version": "1.0.1",
+  "description": "Library and CLI for the TURZX/Turing/UsbMonitor 3.5 display, driven over USB bulk instead of the serial port",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "prepack": "npm run build",
+    "prepare": "npm run build",
+    "example:dashboard": "node examples/dashboard.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5",
+    "usb": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "turzx": "dist/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "src",
+    "examples",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "Pamsho09",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pamsho09/turzx-render.git"
+  },
+  "homepage": "https://github.com/Pamsho09/turzx-render#readme",
+  "bugs": {
+    "url": "https://github.com/Pamsho09/turzx-render/issues"
+  },
+  "keywords": [
+    "turzx",
+    "turing",
+    "usb",
+    "display",
+    "rgb565",
+    "macos"
+  ]
+}

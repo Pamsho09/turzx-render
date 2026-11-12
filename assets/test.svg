@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <rect width="480" height="320" fill="#111"/>
+  <rect x="4" y="4" width="472" height="312" rx="8" fill="none" stroke="#fff" stroke-width="5"/>
+  <path d="M4 4h55v10H14v45H4z" fill="#f00"/><path d="M476 4v55h-10V14h-45V4z" fill="#0f0"/>
+  <path d="M4 316v-55h10v45h45v10z" fill="#00f"/><path d="M476 316h-55v-10h45v-45h10z" fill="#fff"/>
+  <text x="240" y="76" fill="#fff" font-family="Arial,sans-serif" font-size="38" font-weight="700" text-anchor="middle">PAMSHO</text>
+  <text x="240" y="121" fill="#ddd" font-family="Arial,sans-serif" font-size="27" font-weight="700" text-anchor="middle">TURZX 3.5 TEST</text>
+  <text x="240" y="153" fill="#aaa" font-family="monospace" font-size="20" text-anchor="middle">480 × 320 • RGB565 LE</text>
+  <rect x="40" y="181" width="80" height="72" fill="#f00"/><rect x="120" y="181" width="80" height="72" fill="#0f0"/>
+  <rect x="200" y="181" width="80" height="72" fill="#00f"/><rect x="280" y="181" width="80" height="72" fill="#fff"/>
+  <rect x="360" y="181" width="80" height="72" fill="#000" stroke="#777"/>
+  <g fill="#fff" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="80" y="275">RED</text><text x="160" y="275">GREEN</text><text x="240" y="275">BLUE</text><text x="320" y="275">WHITE</text><text x="400" y="275">BLACK</text>
+  </g>
+  <circle cx="40" cy="145" r="13" fill="#ff0"/><polygon points="440,132 455,158 425,158" fill="#0ff"/>
+</svg>
